@@ -23,4 +23,4 @@ def index():
 def static_script(filename):
 	send_file(filename, root="scripts")
 
-run(reloader=True, host='localhost', port=8080)
+#run(reloader=True, host='localhost', port=8080)
