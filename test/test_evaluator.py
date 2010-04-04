@@ -85,6 +85,7 @@ class TestEvaluator(unittest.TestCase):
 		self.assertAlmostEqual(evaluate('-3+-2'), -5)
 		self.assertAlmostEqual(evaluate('1+(-2*2)'), -3)
 		self.assertAlmostEqual(evaluate('1--(-2^2)'), -3)
+		self.assertAlmostEqual(evaluate('(1)-2'), -1)
 		
 if __name__ == '__main__':
 	unittest.main()

@@ -130,7 +130,7 @@ def evaluate(expr):
 		elif isinstance(tok, OperatorToken):
 			# change subtraction token to minus token if necessary
 			if isinstance(tok, SubtractionToken) and  \
-				(prev_tok is None or not isinstance(prev_tok, NumberToken)):
+				(prev_tok is None or (isinstance(prev_tok, OperatorToken) or isinstance(prev_tok, OpenToken))):
 				tok = UnaryMinusToken()
 			
 			while len(op_stack) > 0:
