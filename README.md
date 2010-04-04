@@ -10,6 +10,8 @@ Installation
 
 edsger was written for Python 2.5. Other versions should work alright. For the web component of the application, you'll need `mako` and `bottle`. You can install these with `easy_install`.
 
+Rename config.sample.py to config.py, then run `python app.py`. You should see the homepage on `localhost:8080`.
+
 Design and Implementation
 =========================
 
