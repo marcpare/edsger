@@ -6,14 +6,14 @@ edsger is a web service to evaluate mathematical expressions. On the back end is
 Installation
 ============
 
-edsger was written for Python 2.5. Other versions should work alright.
+edsger was written for Python 2.5. Other versions should work alright. For the web component of the application, you'll need `mako` and `bottle`. You can install these with `easy_install`.
 
 Design and Implementation
 =========================
 
 A straightforward implementation of the Shunting-Hall algorithm powers edsger. Expression evaluation is efficient as a result. 
 
-Cool stuff:
+Cool stuff
 
 * Unary minuses stack correctly. (Try '5-----6', for example)
 * Error messages are lucid, for the most part.
@@ -32,4 +32,4 @@ Deployment of the web service
 
 edsger can be deployed as a JSON web service using [Bottle](http://github.com/defnull/bottle). There is a little HTML console included to demonstrate its usage in AJAX, as well.
 
-Bottle exposes the app using WSGI, so it could be plugged into any WSGI compatible multi-threaded Python serve (like gunicorn, cherryPy, fapws3, ...)
+Bottle exposes the app using WSGI, so it could be plugged into any WSGI compatible multi-threaded Python server (like gunicorn, cherryPy, fapws3, ...)

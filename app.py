@@ -2,6 +2,7 @@ from bottle import route, response, request, run, send_file
 from bottle import mako_view as view
 import simplejson as json
 import edsger
+import config
 
 @route('/evaluate', method="GET")
 def evaluate():
@@ -23,4 +24,5 @@ def index():
 def static_script(filename):
 	send_file(filename, root="scripts")
 
-#run(reloader=True, host='localhost', port=8080)
+if ENVIRONMENT == 'development':
+	run(reloader=True, host='localhost', port=8080)
