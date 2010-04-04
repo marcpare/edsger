@@ -24,5 +24,5 @@ def index():
 def static_script(filename):
 	send_file(filename, root="scripts")
 
-if ENVIRONMENT == 'development':
+if config.ENVIRONMENT == 'development':
 	run(reloader=True, host='localhost', port=8080)
