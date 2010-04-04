@@ -3,6 +3,8 @@ About
 
 edsger is a web service to evaluate mathematical expressions. On the back end is an implementation of the [Shunting-Hall](http://en.wikipedia.org/wiki/Shunting-yard_algorithm) algorithm. It's named edsger because Edsger Dijkstra came up with the algorithm.
 
+Try out a demo [here](http://www.teamcurious.com/edsger)
+
 Installation
 ============
 
