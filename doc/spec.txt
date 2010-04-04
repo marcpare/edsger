@@ -1,0 +1,24 @@
+You're free to choose any language you'd like, so long as we can run it on Ubuntu 9.04 without installing 3rd-party (non-apt get) packages.  Please write your code as if this were a component of a production system that will be heavily used and maintained (as opposed to a contest problem).  If you don't have enough time to do the client/service part of the problem, we would also accept an interactive program.
+
+Design and implement a calculator service and a client that sends arithmetic expressions to the service and get results back.
+
+(1) An arithmetic expression is a string that may contain integers, "+", "*", "(" and ")". Its result is also an integer.
+(2) Clients and the service may run on different machines.
+(3) The interface between the client and the service is open to any design.
+(4) The service should be able to handle concurrent requests and take throughput and availability into consideration.
+
+Examples:
+
+Input: (2+3)*(1+4)
+Output: 25
+
+Input: 3**2
+Output: error - invalid operator
+
+Input: 3*(2+1
+Output: error - miss-matched parenthesis
+
+Please submit:
+
+(1) Brief description about the design, implementation and performance analysis.
+(2) Source code of the service and the client and instructions to compile and run both of them.
